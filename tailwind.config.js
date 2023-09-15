@@ -9,6 +9,7 @@ module.exports = {
 				'medium-gray': '#E5E5E4',
 				'light-purple': '#F3F1FE',
 				'purple-800': '#745CF1',
+				'blue-navy': '#474374',
 				purple: '#3F25C8'
 			},
 			fontFamily: {

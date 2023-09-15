@@ -1,15 +1,13 @@
-export interface LabeledInputProps {
-	label: string
-	type: string
-	placeholder: string
-	options: LabeledInputOption[]
-	icon: string
-	value: string
-	readonly: boolean
-	id: string
-}
-
-interface LabeledInputOption {
-	value: string
-	label: string
+export interface SelectProps {
+	label: string;
+	type: string;
+	placeholder: string;
+	icon?: ConstructorOfATypedSvelteComponent;
+	options?: {
+		name: string;
+		value: string;
+	}[];
+	icon?: string;
+	value: string;
+	id: string;
 }
