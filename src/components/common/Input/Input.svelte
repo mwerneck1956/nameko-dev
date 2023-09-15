@@ -1,11 +1,12 @@
 <script lang="ts">
-	import type { InputProps } from './index'
+	import type { InputProps } from './index';
 
-	export let { label, placeholder, type }: InputProps = {
+	export let { label, placeholder, type, customClass }: InputProps = {
 		label: '',
 		type: 'text',
 		placeholder: '',
-	}
+		customClass: ''
+	};
 </script>
 
 <div class="mb-4">
@@ -22,8 +23,9 @@
       w-full py-4 px-3 text-gray-700 h-10
       outline-none
       placeholder-dark-gray font-amplitudeWide font-normal text-base
+		{customClass}
       "
-		type="text"
+		{type}
 		{placeholder}
 	/>
 </div>

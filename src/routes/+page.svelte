@@ -7,8 +7,14 @@
 	import IconButton from '../components/common/IconButton/IconButton.svelte';
 	import HomeIcon from '../icons/HomeIcon.svelte';
 	import PropertyIcon from '../icons/Property.svelte';
+	import PeopleIcon from '../icons/People.svelte';
 	import BedIcon from '../icons/bed.svelte';
 	import Bath from '../icons/Bath.svelte';
+
+	const defaultSelectOptions: { name: string; value: string }[] = [];
+
+	for (let i = 0; i < 3; i++)
+		defaultSelectOptions.push({ name: String(i + 1), value: String(i + 1) });
 </script>
 
 <svelte:head>
@@ -67,8 +73,11 @@
 				<Input label="Lease Length (months)" />
 			</div>
 			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-5">
-				<Select options={[{ name: '1', value: '1' }]} label="beds" icon={BedIcon} />
-				<Select options={[{ name: '1', value: '1' }]} label="Baths" icon={Bath} />
+				<Select options={defaultSelectOptions} label="Beds" icon={BedIcon} />
+				<Select options={defaultSelectOptions} label="Baths" icon={Bath} />
+				<Input label="Sq. Ft." customClass="h-[48px]" />
+				<Input type="date" customClass="h-[48px] " label="Available on" />
+				<Select options={defaultSelectOptions} label="Vacancy" icon={PeopleIcon} />
 			</div>
 		</div>
 	</div>
