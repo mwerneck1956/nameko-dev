@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	background: #fcfcfd;
+}
+
+* {
+	font-family: 'Amplitude Wide', sans-serif;
+}
+
+@layer {
+	.text-shadow-md {
+		text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	}
+
+	@font-face {
+		font-family: 'Amplitude Wide';
+		src: local('Amplitude-Wide'), local('amplitude-wide'),
+			url('/fonts/amplitude-wide/amplitude-wide-regular.ttf');
+		font-weight: normal;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'Amplitude Wide Medium';
+		src: local('Amplitude-Wide-Medium'), local('amplitude-wide-medium'),
+			url('/fonts/amplitude-wide/amplitude-wide-medium.ttf');
+		font-weight: medium;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'Inter';
+		src: local('Inter-Medium'), local('inter-medium'), url('/fonts/inter/Inter-Medium.ttf');
+		font-weight: medium;
+		font-display: swap;
+	}
+	@font-face {
+		font-family: 'Amplitude Wide Book';
+		src: local('Amplitude-Wide-Book'), local('amplitude-wide-book'),
+			url('/fonts/amplitude-wide-book/amplitude-wide-book.ttf');
+		font-weight: 400;
+		font-display: swap;
+	}
+}
