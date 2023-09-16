@@ -3,4 +3,6 @@ export interface InputProps {
 	type: string;
 	placeholder: string;
 	customClass?: string;
+	id: string;
+	testId?: string;
 }

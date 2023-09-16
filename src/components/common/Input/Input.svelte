@@ -1,19 +1,20 @@
 <script lang="ts">
 	import type { InputProps } from './index';
 
-	export let { label, placeholder, type, customClass }: InputProps = {
+	export let { label, placeholder, type, customClass, id, testId }: InputProps = {
 		label: '',
 		type: 'text',
 		placeholder: '',
-		customClass: ''
+		customClass: '',
+		id: '',
+		testId: ''
 	};
+
+	let inputValue = '';
 </script>
 
 <div class="mb-4">
-	<label
-		class="block text-dark-gray text-base font-semibold font-amplitudeWide mb-[4px]"
-		for="username"
-	>
+	<label class="block text-dark-gray text-base font-semibold font-amplitudeWide mb-[4px]" for={id}>
 		{label}
 	</label>
 	<input
@@ -25,7 +26,10 @@
       placeholder-dark-gray font-amplitudeWide font-normal text-base
 		{customClass}
       "
-		{type}
+		{id}
+		type="text"
 		{placeholder}
+		data-test-id={testId}
+		bind:value={inputValue}
 	/>
 </div>
