@@ -83,7 +83,7 @@
 	</div>
 
 	<footer class="flex justify-between mt-[54px]">
-		<Button variant="primary">back</Button>
-		<Button variant="secondary">continue</Button>
+		<Button variant="primary" label="back" />
+		<Button variant="secondary" label="continue" />
 	</footer>
 </main>

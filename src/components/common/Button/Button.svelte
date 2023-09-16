@@ -5,7 +5,8 @@
 		label,
 		placeholder,
 		type,
-		variant = 'primary'
+		variant = 'primary',
+		onClick
 	}: ButtonProps = {
 		label: '',
 		type: 'text',
@@ -28,6 +29,6 @@
 	};
 </script>
 
-<button class={classNameByVariants[variant]} type="button" id="username">
-	<slot />
+<button on:click={onClick} class={classNameByVariants[variant]} type="button" id="username">
+	{label}
 </button>
