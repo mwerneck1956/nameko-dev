@@ -9,7 +9,8 @@
 		placeholder = '',
 		value = 'Select',
 		type = 'text',
-		id
+		id,
+		name
 	}: Partial<SelectProps> = {};
 
 	let dropdownOpen = false;
@@ -41,6 +42,8 @@
 				id="menu-button"
 				aria-expanded="true"
 				aria-haspopup="true"
+				aria-label={name}
+				{name}
 			>
 				<div
 					class="flex justify-between gap-2 font-amplitudeWideBook font-normal text-base text-blue-navy"
@@ -49,7 +52,9 @@
 						<svelte:component this={icon} />
 					{/if}
 
-					{value}
+					<span aria-label={`${name}-value`}>
+						{value}
+					</span>
 				</div>
 
 				<ChevronDown />
@@ -63,6 +68,7 @@
 				aria-orientation="vertical"
 				aria-labelledby="menu-button"
 				tabindex="-1"
+				aria-label={`${name}-dropdown`}
 			>
 				<div class="py-1" role="none">
 					{#each options as option}

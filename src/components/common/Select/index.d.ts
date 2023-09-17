@@ -10,4 +10,5 @@ export interface SelectProps {
 	icon?: string;
 	value: string;
 	id: string;
+	name?: string;
 }
