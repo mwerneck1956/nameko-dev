@@ -6,9 +6,7 @@
 
 ## Overview do projeto
 
-![Mobile](https://github.com/mwerneck1956/pokedex/blob/master/OverviewPokemonCardsMobile.gif)
-
-![Desktop](https://github.com/mwerneck1956/pokedex/blob/master/OverviewPokemonCardsDesktop.gif)
+![Mobile](https://github.com/mwerneck1956/nameko-dev/blob/master/Svelte.gif)
 
 ## 💻 Linguagens/Frameworks/Bibliotecas Utilizadas
 
@@ -48,13 +46,13 @@ PUBLIC_API_URL = YOUR_API_URL
 $ yarn install || npm i
 ```
 
-### Executando a aplicação
+### Running the application
 
 ```bash
 $ yarn dev || npm run dev
 ```
 
-### 🧪 Executar os testes unitários (Vitest + Svelte testing library)
+### 🧪 "Run the unit tests (Vitest + Svelte testing library)."
 
 ```bash
 $  yarn test || npm run test
