@@ -1,21 +1,61 @@
-## Env variables
+<h1 align ='center' > Nameko Devex </h1>
 
-## How to run the project
+## 🔖 Sobre
 
-To run the project type the following command
+> It consists of a simple project in Svelte that implements the following figma ![interface](https://www.figma.com/file/DSl3CRb0uW5hyIUNE0rWPK/nameko-devex?node-id=0:1), and a page to show information about an order.
+
+## Overview do projeto
+
+![Mobile](https://github.com/mwerneck1956/pokedex/blob/master/OverviewPokemonCardsMobile.gif)
+
+![Desktop](https://github.com/mwerneck1956/pokedex/blob/master/OverviewPokemonCardsDesktop.gif)
+
+## 💻 Linguagens/Frameworks/Bibliotecas Utilizadas
+
+- 🖥️ Svelte
+- <img src = 'https://badges.aleen42.com/src/tailwindcss.svg' />
+- <img src = 'https://badges.aleen42.com/src/typescript.svg'>
+- <img alt = 'react' src = "https://badges.aleen42.com/src/react.svg">
+- ✏️ Vitest
+- ✏️ Svelte testing library
+
+## Instalação
+
+To start the development process you must have the following tools on your machine:
+
+- NodeJS
+- GIT
+- Yarn
+
+### Baixando a aplicação
 
 ```bash
-npm run dev
+$ git clone https://github.com/mwerneck1956/nameko-dev
+$ cd src
 ```
 
-## Building
+### Configuring environment variables
 
-To create a production version of your app:
+To configure the environment variables necessary for the application to function, you must just add the URL of the orders service, this variable is called `API` `PUBLIC_API_URL` and is located at .env
 
 ```bash
-npm run build
+PUBLIC_API_URL = YOUR_API_URL
 ```
 
-You can preview the production build with `npm run preview`.
+### Installing dependencies
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+```bash
+$ yarn install || npm i
+```
+
+### Executando a aplicação
+
+```bash
+$ yarn dev || npm run dev
+```
+
+### 🧪 Executar os testes unitários (Vitest + Svelte testing library)
+
+```bash
+$  yarn test || npm run test
+```

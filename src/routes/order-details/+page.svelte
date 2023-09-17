@@ -45,7 +45,7 @@
 
 					<ul>
 						<li class="font-inter font-normal">
-							Quantiy: {$order.quantity}
+							Quantity: {$order.quantity}
 						</li>
 						<li class="font-inter font-normal">
 							Maximum speed: {$order.product.maximum_speed}
