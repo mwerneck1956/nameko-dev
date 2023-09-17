@@ -8,7 +8,9 @@ export const error = writable(false);
 
 export const fetchOrderData = async () => {
 	try {
+		loading.set(true);
 		error.set(false);
+
 		const res = await fetchOrder(1);
 		order.set(res[0]);
 	} catch (err) {

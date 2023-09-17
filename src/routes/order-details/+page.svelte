@@ -8,6 +8,10 @@
 	});
 </script>
 
+<svelte:head>
+	<title>Order Details</title>
+</svelte:head>
+
 {#if $error}
 	<Error />
 {:else}
