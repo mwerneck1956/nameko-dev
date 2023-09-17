@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { ButtonProps } from './index';
 
-	export let { label, placeholder, type, icon }: ButtonProps = {
+	export let { label, placeholder, type, icon, onClick }: ButtonProps = {
 		label: '',
 		type: 'text',
 		placeholder: ''
@@ -20,6 +20,7 @@
       "
 	type="button"
 	id="username"
+	on:click={onClick}
 >
 	{#if icon}
 		<svelte:component this={icon} />

@@ -1,5 +1,4 @@
 <script context="module" lang="ts">
-	import { ROUTES } from './routes';
 	import Input from '../components/common/Input/Input.svelte';
 	import Select from '../components/common/Select/Select.svelte';
 	import CurrencyInput from '../components/common/CurrencyInput/Input.svelte';
