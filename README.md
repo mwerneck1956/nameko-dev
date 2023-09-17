@@ -2,7 +2,7 @@
 
 ## 🔖 Sobre
 
-> It consists of a simple project in Svelte that implements the following figma ![interface](https://www.figma.com/file/DSl3CRb0uW5hyIUNE0rWPK/nameko-devex?node-id=0:1), and a page to show information about an order.
+> It consists of a simple project in Svelte that implements the following figma [interface](https://www.figma.com/file/DSl3CRb0uW5hyIUNE0rWPK/nameko-devex?node-id=0:1), and a page to show information about an order.
 
 ## Overview do projeto
 
