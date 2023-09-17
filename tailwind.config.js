@@ -10,6 +10,8 @@ module.exports = {
 				'light-purple': '#F3F1FE',
 				'purple-800': '#745CF1',
 				'blue-navy': '#474374',
+				'dark-blue': '#043b72',
+				'medium-orange': '#f58220',
 				purple: '#3F25C8'
 			},
 			fontFamily: {

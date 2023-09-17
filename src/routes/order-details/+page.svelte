@@ -1,47 +1,44 @@
 <script async lang="ts">
 	import { order, loading } from '../../store/order';
-
-	const order_details = {
-		id: 1,
-		quantity: 1,
-		product_id: 'the_odyssey',
-		image: 'http://www.example.com/airship/images/the_odyssey.jpg',
-		price: '100000.99',
-		product: {
-			maximum_speed: 5,
-			id: 'the_odyssey',
-			title: 'The Odyssey',
-			passenger_capacity: 101,
-			in_stock: 9
-		}
-	};
 </script>
 
-<div class="flex flex-col w-full justify-center items-center shadow-xl h-full p-8">
-	<h2 class="text-3xl text-center text-dark-gray font-inter font-bold mb-8">Order details</h2>
+<header class="bg-dark-blue p-4 flex items-center justify-center">
+	<h2 class="text-4xl text-center text-white-0 font-inter font-bold self-center">Order details</h2>
+</header>
 
+<div class="flex flex-col w-full justify-center items-center shadow-2xl h-full p-8 md:items-start">
 	{#if $loading === false}
-		<div class="flex flex-col items-center md:flex-row md:items-start gap-6">
-			<img src="images/spaceship.png" class="w-full md:w-2/6" />
-			<div class="flex flex-col">
-				<h3 class=" font-amplitudeWideMedium font-semibold text-dark-gray text-2xl">
-					{order_details.product.title}
-				</h3>
-				<strong class="font-inter font-normal">
-					Price : U$ {order_details.price}
-				</strong>
+		<div class="flex flex-col items-start md:flex-row gap-6">
+			<div class="flex flex-col gap-6">
+				<div>
+					<h3
+						class=" font-amplitudeWideMedium font-semibold text-dark-gray text-2xl mb-0 leading-4"
+					>
+						{$order.product.title}
+					</h3>
+					<sub>
+						Id: {$order.id}
+					</sub>
+					<div class="mt-2">
+						<strong class="font-inter font-bold text-lg text-dark-gray">
+							Price : $ {$order.price}
+						</strong>
+					</div>
+				</div>
+
 				<ul>
 					<li class="font-inter font-normal">
-						Id: {order_details.id}
+						Quantiy: {$order.quantity}
 					</li>
 					<li class="font-inter font-normal">
-						Maximum speed: {order_details.product.maximum_speed}
+						Maximum speed: {$order.product.maximum_speed}
 					</li>
 					<li class="font-inter font-normal">
-						Passenger capacity: {order_details.product.maximum_speed}
+						Passenger capacity: {$order.product.maximum_speed}
 					</li>
 				</ul>
 			</div>
+			<!-- <img alt="spaceship" src="images/spaceship.png" class="w-full md:w-2/6" /> -->
 		</div>
 	{:else}
 		<div role="status">
