@@ -29,6 +29,12 @@
 	};
 </script>
 
-<button on:click={onClick} class={classNameByVariants[variant]} type="button" id="username">
+<button
+	aria-label={label}
+	on:click={onClick}
+	class={classNameByVariants[variant]}
+	type="button"
+	id="username"
+>
 	{label}
 </button>

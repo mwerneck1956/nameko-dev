@@ -1,12 +1,12 @@
 <script lang="ts">
-	import Money from '../../../icons/Money.svelte'
-	import type { InputProps } from './index'
+	import Money from '../../../icons/Money.svelte';
+	import type { InputProps } from './index';
 
 	export let { label, placeholder, type }: InputProps = {
 		label: '',
 		type: 'text',
-		placeholder: '',
-	}
+		placeholder: ''
+	};
 </script>
 
 <div class="mb-4">
@@ -17,12 +17,11 @@
 		{label}
 	</label>
 
-	<div
-		class="flex items-center justify-between border rounded border-light-gray shadow px-[12px]"
-	>
+	<div class="flex items-center justify-between border rounded border-light-gray shadow px-[12px]">
 		<Money />
 
 		<input
+			aria-label={label}
 			class="
 			appearance-none
 		 	py-4 px-3 text-gray-700 h-10
@@ -31,6 +30,7 @@
 			placeholder-dark-gray font-amplitudeWide font-normal text-base
 			"
 			type="text"
+			name={label}
 			{placeholder}
 		/>
 

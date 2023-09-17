@@ -16,6 +16,7 @@
 		{label}
 	</label>
 	<input
+		aria-label={label}
 		class="
       shadow appearance-none
       border rounded border-light-gray
@@ -27,6 +28,7 @@
 		{id}
 		{type}
 		{placeholder}
+		name={label}
 		data-test-id={testId}
 	/>
 </div>

@@ -20,6 +20,7 @@
       "
 	type="button"
 	id="username"
+	aria-label={label}
 	on:click={onClick}
 >
 	{#if icon}
