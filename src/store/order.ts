@@ -17,5 +17,3 @@ export const fetchOrderData = async () => {
 		loading.set(false);
 	}
 };
-
-fetchOrderData();
