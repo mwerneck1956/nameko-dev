@@ -1,3 +1,7 @@
+export interface OrderResponse {
+	order_details: Array<Order>;
+}
+
 export interface Order {
 	id: number;
 	quantity: number;
