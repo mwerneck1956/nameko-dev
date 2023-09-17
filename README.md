@@ -6,7 +6,7 @@
 
 ## Overview do projeto
 
-![Mobile](https://github.com/mwerneck1956/nameko-dev/blob/master/Svelte.gif)
+![Mobile](https://github.com/mwerneck1956/nameko-dev/blob/main/Svelte.gif)
 
 ## 💻 Linguagens/Frameworks/Bibliotecas Utilizadas
 
