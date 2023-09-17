@@ -1,6 +1,11 @@
 <script async lang="ts">
-	import { order, loading, error } from '../../store/order';
+	import { order, loading, error, fetchOrderData } from '../../store/order';
 	import Error from '../../components/common/Error/Error.svelte';
+	import { onMount } from 'svelte';
+
+	onMount(() => {
+		fetchOrderData();
+	});
 </script>
 
 {#if $error}
