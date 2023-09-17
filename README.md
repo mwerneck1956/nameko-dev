@@ -34,7 +34,7 @@ $ cd src
 
 ### Configuring environment variables
 
-To configure the environment variables necessary for the application to function, you must just add the URL of the orders service, this variable is called `API` `PUBLIC_API_URL` and is located at .env
+To configure the environment variables necessary for the application to function, you must just add the URL of the orders service, this variable is called `PUBLIC_API_URL` and is located at .env
 
 ```bash
 PUBLIC_API_URL = YOUR_API_URL
