@@ -9,8 +9,6 @@
 		id: '',
 		testId: ''
 	};
-
-	let inputValue = '';
 </script>
 
 <div class="mb-4">
@@ -27,9 +25,8 @@
 		{customClass}
       "
 		{id}
-		type="text"
+		{type}
 		{placeholder}
 		data-test-id={testId}
-		bind:value={inputValue}
 	/>
 </div>

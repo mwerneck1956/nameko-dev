@@ -22,10 +22,6 @@
 </svelte:head>
 
 <main>
-	<!-- {#each Object.entries(ROUTES) as [name, route]}
-		<a class="mx-2 text-blue-400 underline" href={route}>{name}</a>
-	{/each} -->
-
 	<div class="grid lg:grid-cols-2 gap-20 grid-cols-1">
 		<div>
 			<h1 class="text-4xl font-amplitudeWide font-normal text-dark-gray text-shadow-md">
