@@ -4,7 +4,7 @@
 
 It consists of a simple project in Svelte that implements the following figma [interface](https://www.figma.com/file/DSl3CRb0uW5hyIUNE0rWPK/nameko-devex?node-id=0:1), and a page to show information about an order.
 
-## Overview do projeto
+## Project overview
 
 ![Mobile](https://github.com/mwerneck1956/nameko-dev/blob/main/Svelte.gif)
 
@@ -24,7 +24,7 @@ To start the development process you must have the following tools on your machi
 - GIT
 - Yarn
 
-### Baixando a aplicação
+### Downloading the application
 
 ```bash
 $ git clone https://github.com/mwerneck1956/nameko-dev
