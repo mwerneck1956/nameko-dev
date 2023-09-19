@@ -1,6 +1,6 @@
 <h1 align ='center' > Nameko Devex </h1>
 
-## 🔖 Sobre
+## 🔖 About
 
 It consists of a simple project in Svelte that implements the following figma [interface](https://www.figma.com/file/DSl3CRb0uW5hyIUNE0rWPK/nameko-devex?node-id=0:1), and a page to show information about an order.
 
@@ -8,16 +8,15 @@ It consists of a simple project in Svelte that implements the following figma [i
 
 ![Mobile](https://github.com/mwerneck1956/nameko-dev/blob/main/Svelte.gif)
 
-## 💻 Linguagens/Frameworks/Bibliotecas Utilizadas
+## 💻 Languages/Frameworks/Libraries Used
 
 - 🖥️ Svelte
 - <img src = 'https://badges.aleen42.com/src/tailwindcss.svg' />
 - <img src = 'https://badges.aleen42.com/src/typescript.svg'>
-- <img alt = 'react' src = "https://badges.aleen42.com/src/react.svg">
 - ✏️ Vitest
 - ✏️ Svelte testing library
 
-## Instalação
+## Installation
 
 To start the development process you must have the following tools on your machine:
 
